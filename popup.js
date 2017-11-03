@@ -30,5 +30,5 @@ function DeleteAllTabs() {
 
 function SwitchToConfirmButton() {
   document.getElementById('DeleteAllTabs').style.display = 'none';
-  document.getElementById('ConfirmDelete').style.display = '';
+  document.getElementById('ConfirmDelete').style.display = 'block';
 }

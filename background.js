@@ -25,10 +25,7 @@ function ParseTab(tab) {
       : items.data = [{ iconUrl: tab.favIconUrl, tabUrl: tab.url}]
 
       chrome.storage.sync.set(items, _ => {
-        // Used for development, ensuring we have the data stored. Do not ship to prod pls.
-        chrome.storage.sync.get((items) => {
-          alert(JSON.stringify(items));
-        })
+        // Item saved, nothing to see here!
       })
   });
 }
