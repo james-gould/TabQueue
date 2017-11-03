@@ -11,9 +11,5 @@
     "background": {
         "scripts": ["background.js"]
     },
-    "browser_action": {
-        "default_icon": "assets/img/icon128.png",
-        "default_title": "Add to my queue"
-    },
-    "permissions": ["tabs", "contextMenus"]
+    "permissions": ["tabs", "contextMenus", "activeTab"]
 }

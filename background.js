@@ -3,13 +3,12 @@
  */
 
 const contextProps = { 
-    "title": "Queue this tab",
-    "enabled": true,
-    "onclick": HandleContextClick,
+  "title": "Add Tab to Queue",
+  "enabled": true
 }
 
-function HandleContextClick() {
-    alert('Finished!')
-}
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+  
+});
 
 chrome.contextMenus.create(contextProps);
