@@ -1,0 +1,16 @@
+{
+    "name": "Tab Queue",
+    "description": "Queue tabs for later use!",
+    "manifest_version": 2,
+    "version": "1",
+    "default_locale": "en",
+    "icons": {
+        "16": "",
+        "48": "",
+        "128": ""
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["tabs"]
+}
