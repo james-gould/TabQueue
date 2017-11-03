@@ -93,3 +93,7 @@ wrapper {
   color: #f15c5c;
   background: #feee7d;
 }
+
+#ConfirmDelete {
+  display: none;
+}
