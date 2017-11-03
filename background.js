@@ -9,13 +9,6 @@ const contextProps = {
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   ParseTab(tab);
-
-  /**
-   * Used if we fuck shit up by accident and need to clear storage, just uncomment and it'll wipe sync storage.
-   */
-
-  // chrome.storage.sync.clear(_ => {
-  // })
 });
 
 function ParseTab(tab) {

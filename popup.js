@@ -24,7 +24,7 @@ function GetNextTab() {
 
 function DeleteAllTabs() {
   chrome.storage.sync.clear(_ => {
-    
+    // Nothing to see here, left just in case I need it in the future :)
   })
 }
 
