@@ -1,4 +1,4 @@
-![Tab Queue Screenshot](https://github.com/james-gould/TabQueue/blob/master/Small%20Screenshot.png?raw=true)
+![Tab Queue Screenshot](https://github.com/james-gould/TabQueue/blob/master/Small%20Screenshot.png?raw=true&style=center)
 
 # TabQueue
 A chrome extension to queue tabs up!
