@@ -15,6 +15,8 @@ function OpenSavedTab(tab) {
 
 function GetNextTab() {
   chrome.storage.sync.get((items) => {
+    if(items.data.length === 0) { return; } // No functional difference but we shouldn't be executing anything if no tabs are saved.
+
     const nextTabInfo = items.data.shift();
     chrome.storage.sync.set(items, _ => { // Remove from storage
       OpenSavedTab(nextTabInfo); // Process it
