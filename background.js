@@ -1,4 +1,5 @@
 /**
+ * See the full source: https://github.com/james-gould/TabQueue
  * Handles logic within the background script
  */
 
