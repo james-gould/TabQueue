@@ -15,8 +15,7 @@ function OpenSavedTab(tab) {
 
 function GetNextTab() {
   chrome.storage.sync.get((items) => {
-    const nextTabInfo = items.data[0]; // Temp store the tab info
-    items.data.splice(0, 1) // Remove it from items
+    const nextTabInfo = items.data.shift();
     chrome.storage.sync.set(items, _ => { // Remove from storage
       OpenSavedTab(nextTabInfo); // Process it
     });
